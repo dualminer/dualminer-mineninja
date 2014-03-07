@@ -1,0 +1,26 @@
+#!/bin/bash
+# /etc/init.d/cgminer
+
+case "$1" in 
+    start)
+        echo "Starting cgminer"
+	cd /home/pi/cgminer-3.5.0-gc3355
+        sudo ./cgminer  --api-listen  --scrypt  -c  /home/pi/cgminer.conf.ltc -T &
+	#sh test.sh -T &
+        sudo  rm /home/pi/.profile
+        ;;
+    stop)
+        echo "Stopping cgminer"
+        killall cgminer
+        ;;
+
+    *)
+        echo "Usage: /etc/init.d/cgminer start|stop|restart"
+        exit 1
+        ;;
+    
+esac
+
+exit 0
+
+

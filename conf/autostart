@@ -1,0 +1,22 @@
+#!/bin/bash
+# /etc/init.d/autostart
+
+case "$1" in 
+    start)
+        echo "Copy .profile"
+	
+	cp /home/pi/.profile.bak /home/pi/.profile
+        ;;
+    stop)
+        echo "Delete .profile"
+	rm /home/pi/.profile
+        ;;
+    *)
+        echo "Usage: /etc/init.d/autostart start|stop"
+        exit 1
+        ;;
+esac
+
+exit 0
+
+
