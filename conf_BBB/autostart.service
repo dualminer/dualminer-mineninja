@@ -1,0 +1,9 @@
+[Unit]
+Description=Copy .profile
+
+[Service]
+ExecStart=/etc/init.d/autostart start
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

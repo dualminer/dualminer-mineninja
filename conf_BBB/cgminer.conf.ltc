@@ -1,0 +1,25 @@
+{
+"pools" : [
+	{
+		"url" : "http://ltc.give-me-coins.com:3333",
+		"user" : "haxi.3",
+		"pass" : "3"
+	}
+]
+,
+"api-listen" : true,
+"api-mcast-port" : "4028",
+"api-port" : "4029",
+"expiry" : "120",
+"hotplug" : "5",
+"log" : "5",
+"no-pool-disable" : true,
+"queue" : "1",
+"scan-time" : "30",
+"scrypt" : true,
+"text-only" : true,
+"verbose" : true,
+"shares" : "0",
+"kernel-path" : "/usr/local/bin",
+"api-allow" : "W:127.0.0.1"
+}
