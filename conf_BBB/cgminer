@@ -4,7 +4,7 @@
 case "$1" in 
     start)
         echo "Starting cgminer"
-	sleep 5
+	sleep 15
 	cd /home/root/dualminer-cgminer
         ./cgminer  --api-listen  --scrypt  -c  /home/root/cgminer.conf.ltc -T &
 	#sh test.sh -T &

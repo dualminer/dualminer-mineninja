@@ -4,7 +4,7 @@
 case "$1" in 
     start)
         echo "Starting cgminer"
-	cd /home/pi/cgminer-3.5.0-gc3355
+	cd /home/pi/
         sudo ./cgminer  --api-listen  --scrypt  -c  /home/pi/cgminer.conf.ltc -T &
 	#sh test.sh -T &
         sudo  rm /home/pi/.profile
